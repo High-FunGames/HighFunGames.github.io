@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <title>High Fun Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #222;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    .section {
+      max-width: 960px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .mobile-only {
+      display: none;
+    }
+
+    .pc-only {
+      display: block;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 24px;
+      }
+
+      .pc-only {
+        display: none;
+      }
+
+      .mobile-only {
+        display: block;
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 12px;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>🎮 High Fun Games</h1>
-  <p>환영합니다! 재미있는 게임을 만드는 인디 개발팀입니다.</p>
+
+  <header>
+    <h1>🎮 High Fun Games</h1>
+    <p>작지만 열정 넘치는 인디 모바일 게임 개발팀</p>
+  </header>
+
+  <div class="section">
+    <div class="pc-only">
+      <h2>💻 PC에서 접속 중</h2>
+      <p>현재 PC 화면으로 접속하셨습니다. 이 페이지는 반응형으로 모바일과 PC에 맞춰 다르게 표시됩니다.</p>
+    </div>
+
+    <div class="mobile-only">
+      <h2>📱 모바일에서 접속 중</h2>
+      <p>High Fun Games의 모바일 전용 화면입니다. 손쉽고 직관적인 정보를 제공해드려요.</p>
+    </div>
+
+    <h2 style="margin-top:40px;">📌 팀 소개</h2>
+    <p>High Fun Games는 창의적인 아이디어와 도전정신으로 새로운 모바일 게임을 연구하고 개발하는 인디 팀입니다.</p>
+
+    <h2 style="margin-top:40px;">📧 문의</h2>
+    <p>게임 제안이나 협업, 채용 문의는 아래 이메일로 보내주세요.</p>
+    <p><strong>Email:</strong> highfungames.kr@gmail.com</p>
+  </div>
+
+  <footer>
+    ⓒ 2025 High Fun Games. All rights reserved.
+  </footer>
+
 </body>
 </html>
