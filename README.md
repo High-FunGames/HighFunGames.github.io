@@ -1,2 +1,2 @@
-# High-FunGames.github.io
+# HighFunGames.github.io
 HighFunGames-Homepage
